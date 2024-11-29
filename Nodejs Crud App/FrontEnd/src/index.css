@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ContainerDiv{
+    width: 100%;
+    height: 500px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/3225525/pexels-photo-3225525.jpeg?auto=compress&cs=tinysrgb&w=600);
+
+
+}
+
+.ParentMain{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ParentContent{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     filter: blur(20px); 
+     background-color: transparent;
+    
+
+
+}
+
+.Content{
+    width: 50%;
+    height: 500px;
+  background-color:cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+
+}
+
+
+.inputDiv{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input{
+    width: 250px;
+    height: 80px;
+    border-radius: 33px;
+    text-align: center;
+}
+
+.ButtonDiv{
+    width: 250px;
+    height: 60px;
+    border-radius: 33px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
