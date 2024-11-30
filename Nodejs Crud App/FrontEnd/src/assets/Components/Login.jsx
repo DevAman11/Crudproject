@@ -1,7 +1,6 @@
 import { useState } from "react"
 import React  from 'react'
-
-
+import {Link} from "react-router-dom"
 
 const Login = ()=>{
   const [email,setEmail] = useState()
@@ -13,8 +12,8 @@ const Login = ()=>{
   const HandleSubmit = async (e) =>{
     e.preventDefault();
     const loginData = {
-      email:Email,
-      password:Password
+      email:email,
+      password:password
     }
 
     try {
@@ -108,17 +107,17 @@ console.log(store);
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign in
+                Login
               </button>
             </div>
           </form>
 
-          {/* <p className="mt-10 text-center text-sm/6 text-gray-500">
-            Not a member?{' '}
-            <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-              Start a 14 day free trial
-            </a>
-          </p> */}
+          <p className="mt-10 text-center text-sm/6 text-gray-500">
+           New User ? Create a New Account
+            <Link to="/SignUp" className="font-semibold text-indigo-600 hover:text-indigo-500">
+           SignUp
+            </Link>
+          </p>
 
           {message && <p> {message}</p>}
           {store &&(

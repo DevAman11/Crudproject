@@ -1,6 +1,12 @@
 import React from 'react'
+import {Link, useState} from "react-router-dom"
+
 
 function SignUp() {
+   const [Form,setForm] = useState({
+      Name:'',
+      
+   })
    
   return (
    <>
