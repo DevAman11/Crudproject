@@ -48,8 +48,7 @@ router.get("/",async (req,res)=>{
     const GetData = await schema.find({})
     res.send(GetData)
     } catch (error) {
-        console.log(error);
-        
+        console.log(error);  
     }
 })
 
